@@ -1,4 +1,4 @@
-package java;
+package lista_03;
 
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
@@ -12,12 +12,14 @@ public class Desserializa {
         try {
             FileInputStream fis = new FileInputStream("pessoas.txt");
             ObjectInputStream oin = new ObjectInputStream(fis);
-            for (int i = 0; i < 3; i++){
-                objetos.add((Pessoa) oin.readObject());
-                System.out.println(objetos.get(i).toString());
-            }
+            ListaDePessoas lp = (ListaDePessoas) oin.readObject();
             oin.close();
+            fis.close();
+            for (Pessoa p:lp.getPessoas()) {
+                System.out.println(p);
+            }
             System.out.println("\nTODOS OS ARQUIVOS DESSERIALIZADOS COM SUCESSO!");
+
         } catch (Exception ex) {
             ex.printStackTrace();
         }

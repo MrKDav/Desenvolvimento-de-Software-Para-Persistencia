@@ -1,4 +1,4 @@
-package java;
+package lista_03;
 
 public class Questao04 {
     public static void main(String args[]){

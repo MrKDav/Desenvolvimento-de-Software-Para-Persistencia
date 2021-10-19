@@ -1,4 +1,4 @@
-package java;
+package lista_03;
 
 import java.io.FileInputStream;
 import java.io.IOException;

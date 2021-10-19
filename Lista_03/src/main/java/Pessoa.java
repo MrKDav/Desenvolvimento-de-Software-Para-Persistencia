@@ -1,10 +1,14 @@
-package java;
+package lista_03;
 
 public class Pessoa implements java.io.Serializable{
     private String cpf;
     private String nome;
     private String email;
     private String fone;
+
+    public Pessoa(){
+        super();
+    }
 
     public Pessoa(String cpf, String nome, String email, String fone){
         this.cpf = cpf;
@@ -54,4 +58,6 @@ public class Pessoa implements java.io.Serializable{
     public void setFone(String fone) {
         this.fone = fone;
     }
+
+
 }

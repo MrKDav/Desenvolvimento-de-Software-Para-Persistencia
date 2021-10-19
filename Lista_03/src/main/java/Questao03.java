@@ -1,11 +1,11 @@
-package java;
+package lista_03;
 
 public class Questao03 {
     public static void main(String args[]){
         Serializa sr = new Serializa();
 
         sr.apiJava();
-        //sr.json();
-        //sr.xml();
+        sr.json();
+        sr.xml();
     }
 }
