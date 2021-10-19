@@ -1,4 +1,4 @@
-package lista_03;
+package java;
 
 import com.fasterxml.jackson.annotation.JsonRootName;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -11,14 +11,9 @@ import java.io.*;
 import java.util.*;
 
 public class Serializa {
-
-    //List<Pessoa> objetos = new ArrayList<>();
     ListaDePessoas objetos;
 
     public Serializa(){
-//        objetos.add(new Pessoa("123.456.789-10", "Marcus", "marcus@gmail.com", "(88) 99876-5432"));
-//        objetos.add(new Pessoa("109.876.543-21", "João", "joao@gmail.com", "(88) 98233-5182"));
-//        objetos.add(new Pessoa("789.101.23-45", "Maria", "maria@gmail.com", "(88) 97687-4652"));
 
         this.objetos = new ListaDePessoas(new Pessoa("123.456.789-10", "Marcus", "marcus@gmail.com", "(88) 99876-5432"),
                                             new Pessoa("109.876.543-21", "João", "joao@gmail.com", "(88) 98233-5182"),

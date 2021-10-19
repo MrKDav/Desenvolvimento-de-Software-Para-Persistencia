@@ -1,4 +1,4 @@
-package lista_03;
+package java;
 
 public class Pessoa implements java.io.Serializable{
     private String cpf;
